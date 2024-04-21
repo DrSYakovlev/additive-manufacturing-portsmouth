@@ -31,6 +31,17 @@ body {
     -webkit-transition: all 0.5s ease-in-out;
 }
 
+img {
+    width: 150px;
+    padding: 10px
+}
+
+.bio {
+    padding: 10px 30px 20px 40px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;    
+}
+
 /*----------Nav bar----------*/
 
 .no-padding {
@@ -38,10 +49,12 @@ body {
 }
 
 .menuitem {
-    height: 60px;
+    height: 100px;
     text-align: center;
     padding: 0;
     border-top: solid 2px grey;
+    border-right: solid 2px grey;
+    background-color: rgb(232, 229, 222);
 }
 
 .menuitem a {
@@ -49,6 +62,7 @@ body {
     text-decoration: none;
     color: darkslategray;
     height: 120px;
+    font-size: 20px;
 }
 
 .menuitem span {
@@ -75,6 +89,8 @@ body {
     padding: 25px;
 }
 
+
+
 .front-text-format {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -84,6 +100,7 @@ body {
     color:darkslategrey;
     margin: 20px; 
 }
+
 
 #nav {
     margin: 0;
@@ -129,6 +146,7 @@ a {
     padding: 5px;
     font-size: 16px;
     font-weight: 100;
+    margin-top: 50px;
 
 }
 
@@ -140,9 +158,29 @@ a {
 
 .menuitem:hover {
     background-color:cadetblue;
+    
 }
 
 .menuitem span:hover {
-    color: white;
+    color: white;  
+}
+
+.bio:hover {
+    color: black;
+    font-weight: 500;
+}
+
+
+/*----------Media Query----------*/
+
+@media only screen and (max-width: 576px) {
+    .logo {
+        min-height: 120px;
+    }
+
+    .title {
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
 }
 
