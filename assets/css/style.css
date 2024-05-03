@@ -32,12 +32,12 @@ body {
 }
 
 img {
-    width: 150px;
+    width: 100%;
     padding: 10px
 }
 
 .bio {
-    padding: 10px 30px 20px 40px;
+    padding: 10px 30px 30px 20px;
     font-size: 18px;
     font-family: "Roboto", sans-serif;    
 }
@@ -173,6 +173,12 @@ a {
 
 /*----------Media Query----------*/
 
+@media only screen and (max-width: 768px) {
+    img {
+        width: 30%;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .logo {
         min-height: 120px;
@@ -181,6 +187,10 @@ a {
     .title {
         margin-top: 30px;
         margin-bottom: 35px;
+    }
+
+    img {
+        width: 50%;
     }
 }
 
